@@ -1,0 +1,31 @@
+@mixin fondo-de-color($color) {
+    background-color: $color;
+  }
+  .boton {
+    @include fondo-de-color(rgb(181, 177, 189));
+    color: rgb(255, 0, 0);
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .tarjeta {
+    @include fondo-de-color(white);
+    border: 1px solid gray;
+    padding: 20px;
+  }
+  @mixin sombra($offset-x, $offset-y, $blur, $color) {
+    box-shadow: $offset-x $offset-y $blur $color;
+  }
+  .boton-con-sombra {
+    @include sombra(3px, 3px, 5px, rgba(0, 0, 0, 0.3));
+    background-color: rgb(104, 80, 4);
+    color: rgb(219, 206, 206);
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  .tarjeta-con-sombra {
+    @include sombra(0, 4px, 8px, rgba(0, 0, 0, 0.2));
+    background-color: white;
+    border: 1px solid gray;
+    padding: 20px;
+  }

@@ -1,0 +1,240 @@
+@import 'header.scss';
+@import 'main.scss';
+@import 'footer.scss';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-item{
+    
+    height: 85vh;
+    width: 100%;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.logo1{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo1 a img{
+    width: 70%;
+    padding-bottom: 0px;
+}
+.listnav{
+    list-style: none;
+}
+.listaItems{
+    display: inline-block;
+    padding-right: 3rem;
+}
+.listaItems a{
+    text-decoration: none;
+
+}
+
+.galeria{
+    font-family: $main-fuente-general;
+    width: 85%;
+    margin: 0 auto;
+    gap: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.galeria .hijoGaleria{
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: $color-galeria;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.hijoGaleria img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.padreInstagram{
+    gap: 3rem;
+    justify-content: center;
+    display: flex;
+
+}
+.instagram{
+    width: 20%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.instagram img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.tituloTiendas{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.tarjetaTiendas{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: antiquewhite;
+}
+.maps{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: antiquewhite;
+}
+.tituloNosotros{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.subtituloNosotros{
+    font-family:cursive;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.nosotros{
+    display: flex;
+    justify-content: center;
+    gap: 3rem  ;
+
+}
+.hijoNosotros{
+    width:20%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.hijoNosotros img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.descripcionNosotros{
+    font-family:cursive;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.tituloContacto{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.subtituloContacto{
+    font-family:cursive;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.tarjetaContacto{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 80%;
+    height: 25vh;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: antiquewhite;
+}
+.tituloCyd{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.subtituloCyd{
+    font-family:cursive;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: beige;
+}
+.textoCyd{
+    font-family:cursive;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    font-size: 155%;
+}
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-icon img {
+    width: 170%;
+    height: auto;
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.5);
+  }

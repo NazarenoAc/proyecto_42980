@@ -1,0 +1,32 @@
+$tipografia-header: Arial;
+$color-background-header: navbar-light bg-light;
+
+$display-boton-reserva: inline-block;
+$background-boton: rgb(223, 219, 219);
+$width-boton: 200px;
+$height-boton: 50px;
+$font-size-boton: 2rem;
+$text-align-boton: center;
+$color-boton: rgb(104, 79, 10);
+$padding-boton: 15px;
+$bordes-boton: 15px;
+$fuente-boton: Arial;
+
+
+.header{
+    font-family: $tipografia-header;
+    background-color:$color-background-header;
+}
+
+.boton{
+    display: $display-boton-reserva;
+    width: $width-boton;
+    height: $height-boton;
+    border-radius: $bordes-boton;
+    font-size: $font-size-boton;    
+    background-color: $background-boton;
+    text-align:$text-align-boton;
+    font-family: $fuente-boton;
+    color: $color-boton;
+    text-decoration: none;
+}

@@ -1,0 +1,11 @@
+$footer-color: rgb(214, 198, 163);
+$footer-color-letras: rgb(0, 0, 0);
+
+.footer {
+    background-color:$footer-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    color: $footer-color-letras;
+}
